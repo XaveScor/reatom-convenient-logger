@@ -1,15 +1,17 @@
 {
-  "name": "reatom-convinient-logger",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@xavescor/reatom-convenient-logger",
+  "version": "0.1.0",
+  "description": "A flat, mappable logger for Reatom",
   "private": true,
   "exports": "./src/index.ts",
   "scripts": {
-    "build": "smartbundle"
+    "build": "smartbundle",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -18,7 +20,11 @@
     }
   },
   "type": "module",
+  "peerDependencies": {
+    "@reatom/core": "^1001.1.0"
+  },
   "devDependencies": {
+    "@reatom/core": "1001.1.0",
     "@typescript/typescript6": "^6.0.2",
     "oxlint": "^1.74.0",
     "smartbundle": "^0.16.1",

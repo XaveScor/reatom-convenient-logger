@@ -207,6 +207,9 @@ importers:
 
   .:
     devDependencies:
+      '@reatom/core':
+        specifier: 1001.1.0
+        version: 1001.1.0
       '@typescript/typescript6':
         specifier: ^6.0.2
         version: 6.0.2
@@ -376,6 +379,9 @@ packages:
 
   '@poppinss/exception@1.2.3':
     resolution: {integrity: sha512-dCED+QRChTVatE9ibtoaxc+WkdzOSjYTKi/+uacHWIsfodVfpsueo3+DKpgU5Px8qXjgmXkSvhXvSCz3fnP9lw==}
+
+  '@reatom/core@1001.1.0':
+    resolution: {integrity: sha512-7+01/9C+gjERI2kuNb+yBF6R33r50Lcv8ZLmR0iPZYOpu61EODGal5ShgfkpH8tIe8X0E7WI7wcvbEVxbRArBw==}
 
   '@rolldown/binding-android-arm64@1.1.5':
     resolution: {integrity: sha512-lZg8fqIv2v7FF237bwMgzGZEJvGL79/s5knJ/i6FmsGF4XXlzccZ4jb+TrFIxtSSxFtIpdsgrPZeMk1I9AFcyQ==}
@@ -721,6 +727,9 @@ packages:
   get-east-asian-width@1.6.0:
     resolution: {integrity: sha512-QRbvDIbx6YklUe6RxeTeleMR0yv3cYH6PsPZHcnVn7xv7zO1BHN8r0XETu8n6Ye3Q+ahtSarc3WgtNWmehIBfA==}
     engines: {node: '>=18'}
+
+  idb-keyval@6.3.0:
+    resolution: {integrity: sha512-um+2dgAWmYsu615EXpWVwSmapJhON0G43t3Ka/EVaohzPQXSMqKEqeDK/oIW3Ow+BXaF2PvSc+oBTFp793A5Ow==}
 
   kleur@4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
@@ -1133,6 +1142,12 @@ snapshots:
 
   '@poppinss/exception@1.2.3': {}
 
+  '@reatom/core@1001.1.0':
+    dependencies:
+      '@standard-schema/spec': 1.1.0
+    optionalDependencies:
+      idb-keyval: 6.3.0
+
   '@rolldown/binding-android-arm64@1.1.5':
     optional: true
 
@@ -1353,6 +1368,9 @@ snapshots:
   get-caller-file@2.0.5: {}
 
   get-east-asian-width@1.6.0: {}
+
+  idb-keyval@6.3.0:
+    optional: true
 
   kleur@4.1.5: {}
 
