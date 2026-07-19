@@ -208,8 +208,8 @@ importers:
   .:
     devDependencies:
       '@reatom/core':
-        specifier: 1001.1.0
-        version: 1001.1.0
+        specifier: 1001.2.0
+        version: 1001.2.0
       '@typescript/typescript6':
         specifier: ^6.0.2
         version: 6.0.2
@@ -380,8 +380,8 @@ packages:
   '@poppinss/exception@1.2.3':
     resolution: {integrity: sha512-dCED+QRChTVatE9ibtoaxc+WkdzOSjYTKi/+uacHWIsfodVfpsueo3+DKpgU5Px8qXjgmXkSvhXvSCz3fnP9lw==}
 
-  '@reatom/core@1001.1.0':
-    resolution: {integrity: sha512-7+01/9C+gjERI2kuNb+yBF6R33r50Lcv8ZLmR0iPZYOpu61EODGal5ShgfkpH8tIe8X0E7WI7wcvbEVxbRArBw==}
+  '@reatom/core@1001.2.0':
+    resolution: {integrity: sha512-7K3zSYKB7mWCzvmDXPkC65EPZNQ2owZ8whnOj4SnB2mZRP7Qt3O8hboIMfKIwNUDfhpKOsefneCF1dXGAJShxg==}
 
   '@rolldown/binding-android-arm64@1.1.5':
     resolution: {integrity: sha512-lZg8fqIv2v7FF237bwMgzGZEJvGL79/s5knJ/i6FmsGF4XXlzccZ4jb+TrFIxtSSxFtIpdsgrPZeMk1I9AFcyQ==}
@@ -1142,7 +1142,7 @@ snapshots:
 
   '@poppinss/exception@1.2.3': {}
 
-  '@reatom/core@1001.1.0':
+  '@reatom/core@1001.2.0':
     dependencies:
       '@standard-schema/spec': 1.1.0
     optionalDependencies:

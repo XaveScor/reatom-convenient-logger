@@ -5,7 +5,10 @@ import {
   context,
   log as reatomLog,
   notify,
+  sleep,
+  throwAbort,
   withAsync,
+  wrap,
 } from '@reatom/core'
 
 import {
@@ -206,4 +209,19 @@ test('preserves core ordering for nested actions and atom changes', () => {
     'loggerTest.nested',
     'loggerTest.nested.state',
   ])
+})
+
+test('does not route abort rejections through onReject (1001.2.0+)', async () => {
+  let request = action(async () => {
+    await wrap(sleep())
+    throwAbort('aborted')
+  }, 'loggerTest.abort').extend(withAsync())
+
+  await expect(request()).rejects.toThrow('aborted')
+  await Promise.resolve()
+  notify()
+
+  expect(records.map(({ name }) => name)).not.toContain(
+    'loggerTest.abort.onReject',
+  )
 })
